@@ -374,8 +374,14 @@ function savePrizes() {
   }
 }
 
+const prizeModal = document.getElementById('prizeModal');
+const editPrizesBtn = document.getElementById('editPrizesBtn');
+const cancelPrizesBtn = document.getElementById('cancelPrizesBtn');
+const savePrizesBtn = document.getElementById('savePrizesBtn');
+const prizeInput = document.getElementById('prizeInput');
+
 editPrizesBtn.addEventListener('click', openPrizeEditor);
-closeBtn.addEventListener('click', closePrizeEditor);
+document.querySelector('.close-button').addEventListener('click', closePrizeEditor);
 cancelPrizesBtn.addEventListener('click', closePrizeEditor);
 savePrizesBtn.addEventListener('click', savePrizes);
 
